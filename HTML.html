@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="HM"><u>Parte 2: Introdução ao HTML</u></h2>
+    <small><a href="index.html">  < Voltar </a></small>
+    <ul>
+        <li><a href="#T">Tags</a></li>
+        <li><a href="#A">Atributos</a></li>
+    </ul>
+    <hr>
+    <h2 id="T"><u>Tags</u></h2>
+    <small><a href="#HM"> < Voltar </a></small>
+
+    <p>As tags em HTML (HyperText Markup Language) são elementos fundamentais da linguagem que servem para estruturar e definir o conteúdo de uma página da web. Elas são usadas para identificar e descrever diferentes partes do documento, como cabeçalhos,
+         parágrafos, imagens, links e muito mais. Elas podem ser:</p>
+
+    <ul>
+     <li><strong>Tag de abertura:</strong> Marca o início de um elemento. Exemplo :<pre><code>&lt;a&gt;</code></pre></li>
+     <li><strong>Tag de fechamento:</strong> Marca o fim do elemento. Exemplo: <pre><code>&lt;/a&gt;</code></pre></li>
+</ul>
+<p>Algumas tags são auto-contidas e não possuem uma tag de fechamento, elas são: Tags Auto-Fechadas.Exemplo: <pre><code>&lt;img&gt;</code></pre></li></p>
+<h3><u>Algumas Tags Importantes</u></h3>
+<ul>
+    <li><code>&lt;strong&gt;</code> -> Deixa em <strong>negrito</strong></li>
+    <li><code>&lt;i&gt;</code> -> deixa em <i>itálico</i></li>
+    <li><code>&lt;p&gt;</code> -> Cria um parágrafo</li>
+    <li><code>&lt;mark&gt;</code> -> deixa <mark>destacado</mark></li>
+    <li><code>&lt;blockquote&gt;</code> Usado para fazer: <blockquote>Citações ou Observações</blockquote></li>
+</ul>
+<hr>
+<h2 id="A"><u>Atributos</u></h2>
+<small><a href="#HM"> < Voltar </a></small>
+
+<p>Os atributos são propriedades adicionais usadas para fornecer informações ou configurar o comportamento de elementos HTML. Eles são sempre declarados dentro da tag de abertura e consistem em um nome 
+    de atributo e um valor, separados por um sinal de igual. Em resumo elas são completmentos dos tags</p>
+
+<h3><u>Características dos Atributos</u></h3>
+<ol>
+<li>Sempre na tag de abertura.</li>
+<br>
+<li>Nome e valor: O nome do atributo é sensível ao padrão (não diferencia maiúsculas de minúsculas, mas é recomendável usar minúsculas por convenção). O valor geralmente é colocado entre aspas ("), embora seja opcional em alguns casos.</li>
+<br>
+<li>Personalizam ou configuram a tag.</li>
+
+
+</ol>
+
+<h3><u>Exemplos de Atributos Comuns</u></h3>
+<ol>
+    <li> Atributos Gerais:
+        <ul>
+        <li>id: Identifica um elemento de forma única na página.</li>
+        <pre style="background-color: lightgray; border: 1px solid #aba9a2; height: 50px; width: 500px; padding-top: 25px; padding-left: 15px; border-radius: 10px;" ><code>&lt;div id="principal"&gt;Conteúdo principal&lt;/div&gt;</code></pre>
+        <li>class: Associa um elemento a uma ou mais classes CSS.</li>
+        <pre style="background-color: lightgray; border: 1px solid #aba9a2; height: 50px; width: 500px; padding-top: 25px; padding-left: 15px; border-radius: 10px;"><code>&lt;p class="destaque"&gt;Texto destacado&lt;/p&gt;</code></pre>
+    </ul></li>
+    <li> Atributos Específicos de Elementos:
+        <ul>
+        <li>href: Define o endereço de destino do link.</li>
+        <br>
+        <li>target: Especifica onde abrir o link (por exemplo, em uma nova aba com _blank).</li>
+        <pre style="background-color: lightgray; border: 1px solid #aba9a2; height: 50px; width: 500px; padding-top: 25px; padding-left: 15px; border-radius: 10px;" ><code>&lt;a href="https://google.com" target="_blank"&gt;Visite o Google&lt;/a&gt;</code></pre>
+        <li>src: Define o caminho da imagem.</li>
+        <br>
+        <li>alt: Texto alternativo caso a imagem não seja carregada.</li>
+        <pre style="background-color: lightgray; border: 1px solid #aba9a2; height: 50px; width: 500px; padding-top: 25px; padding-left: 15px; border-radius: 10px;" ><code>&ltimg src="imagem.jpg" alt="Descrição da imagem"&gt;</code></pre>
+    </ul></li>
+    <li> Atributos Globais:
+        <ul>
+        <li>style: Adiciona estilos CSS diretamente ao elemento.</li>
+        <pre style="background-color: lightgray; border: 1px solid #aba9a2; height: 50px; width: 500px; padding-top: 25px; padding-left: 15px; border-radius: 10px;" ><code>&lt;h1 style="color: red;"&gt;Título em vermelho&lt;/h1&gt;</code></pre>
+        <li>title: Define um texto de ajuda exibido ao passar o mouse sobre o elemento.</li>
+        <pre style="background-color: lightgray; border: 1px solid #aba9a2; height: 50px; width: 500px; padding-top: 25px; padding-left: 15px; border-radius: 10px;" ><code>&lt;abbr title="HyperText Markup Language"&gt;HTML&lt;/abbr&gt;</code></pre>
+    </ul></li>
+</ol>
+<hr>
+<h3><u>Observações Importantes de Atributos</u></h3>
+<ul>
+    <li><strong>Atributos Booleanos:</strong> Alguns atributos não precisam de valor, pois sua presença já indica que estão ativados. Exemplo:</li>
+    <pre style="background-color: lightgray; border: 1px solid #aba9a2; height: 50px; width: 500px; padding-top: 25px; padding-left: 15px; border-radius: 10px;" ><code>&lt;input type="checkbox" checked&gt;</code></pre>
+    <li><strong>Validade e Padrões:</strong> É importante usar os atributos corretos para cada elemento e garantir que estejam dentro dos padrões do HTML5.</li>
+</ul>
+<p>Os atributos são fundamentais para tornar os elementos mais dinâmicos, personalizados e interativos!</p>
+
+
+
+
+</body>
+</html>
